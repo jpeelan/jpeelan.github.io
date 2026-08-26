@@ -6,17 +6,25 @@
 
   <meta
     name="description"
-    content="John Pelan's electrical engineering portfolio, featuring robotics, embedded systems, and tactile sensing projects."
+    content="John Pelan's electrical engineering portfolio, featuring robotics, embedded systems, tactile sensing, sensor interfaces, and custom electronics."
   />
 
   <title>John Pelan | Electrical Engineering Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
   <header class="site-header">
     <nav class="navbar" aria-label="Main navigation">
-      <a class="site-name" href="#intro">John Pelan</a>
+
+      <a class="site-name" href="#intro">
+        John Pelan
+      </a>
 
       <div class="nav-links">
         <a href="#intro">Intro</a>
@@ -24,14 +32,23 @@
         <a href="#work">Work</a>
         <a href="#skills">Skills</a>
       </div>
+
     </nav>
   </header>
 
+
   <main>
-    <!-- INTRO -->
+
+    <!-- =========================
+         INTRO
+    ========================== -->
     <section id="intro" class="intro-section">
+
       <div class="intro-content">
-        <p class="eyebrow">Electrical Engineering Portfolio</p>
+
+        <p class="eyebrow">
+          Electrical Engineering Portfolio
+        </p>
 
         <h1>John Pelan</h1>
 
@@ -50,8 +67,17 @@
           hardware.
         </p>
 
-        <div class="contact-links" aria-label="Contact and professional links">
-          <a class="primary-button" href="mailto:johnpelan1@gmail.com">
+
+        <!-- CONTACT BUTTONS -->
+        <div
+          class="contact-links"
+          aria-label="Contact and professional links"
+        >
+
+          <a
+            class="primary-button"
+            href="mailto:johnpelan1@gmail.com"
+          >
             Email
           </a>
 
@@ -78,26 +104,54 @@
           >
             Resume
           </a>
+
         </div>
       </div>
 
+
+      <!-- PROFILE IMAGE -->
       <div class="profile-photo-wrapper">
+
         <img
           class="profile-photo"
           src="images/profile.jpg"
           alt="Portrait of John Pelan"
         />
+
       </div>
+
     </section>
 
-    <!-- PROJECTS AND RESEARCH -->
-    <section id="projects" class="content-section projects-section">
+
+
+    <!-- =========================
+         PROJECTS AND RESEARCH
+    ========================== -->
+    <section
+      id="projects"
+      class="content-section projects-section"
+    >
+
       <div class="section-heading">
-        <p class="eyebrow">Selected technical work</p>
-        <h2>Projects &amp; Research</h2>
+
+        <p class="eyebrow">
+          Selected technical work
+        </p>
+
+        <h2>
+          Projects &amp; Research
+        </h2>
+
       </div>
 
+
       <div class="project-grid">
+
+
+        <!-- =================================
+             PROJECT 1
+             LEAP HAND TACTILE SENSING
+        ================================== -->
         <article class="project-card">
 
           <img
@@ -107,9 +161,14 @@
           />
 
           <div class="project-card-content">
-            <p class="project-type">Research · Robotics</p>
 
-            <h3>Piezoresistive Tactile Sensing for the LEAP Hand</h3>
+            <p class="project-type">
+              Research · Robotics
+            </p>
+
+            <h3>
+              Piezoresistive Tactile Sensing for the LEAP Hand
+            </h3>
 
             <p>
               A tactile sensing system designed to measure normal and shear
@@ -118,9 +177,9 @@
               visualization software.
             </p>
 
+
             <!--
-              When your Google Doc or project page is ready, replace the span
-              below with:
+              When your project page is ready, replace the span below with:
 
               <a
                 class="project-link"
@@ -135,37 +194,91 @@
             <span class="project-link coming-soon">
               Project document coming soon
             </span>
+
           </div>
         </article>
 
+
+
+        <!-- =================================
+             PROJECT 2
+             PHOTODIODE TACTILE SENSOR
+        ================================== -->
         <article class="project-card">
 
           <img
             class="project-image"
-            src="images/esp32-sensor-network.jpg"
-            alt="Wireless ESP32 sensor and actuation network"
+            src="images/photodiode-tactile-sensor.jpg"
+            alt="Photodiode-based tactile sensing array"
           />
 
           <div class="project-card-content">
-            <p class="project-type">Embedded Systems · Networking</p>
 
-            <h3>Wireless ESP32 Sensor and Actuation Network</h3>
+            <p class="project-type">
+              Research · Optical Sensing
+            </p>
+
+            <h3>
+              Photodiode-Based Tactile Sensing Array
+            </h3>
 
             <p>
-              A distributed embedded network that collects sensor data and
-              controls physical outputs using ESP32 nodes, wireless
-              communication, analog sensing, thermocouple interfaces, relay
-              drivers, and onboard power conversion.
+              An optical tactile sensing system under development that uses
+              a photodiode array and custom electronics to measure spatial
+              changes caused by physical contact and deformation.
             </p>
 
             <span class="project-link coming-soon">
               Project document coming soon
             </span>
+
           </div>
         </article>
 
+
+
+        <!-- =================================
+             PROJECT 3
+             EGOTAC FLEXIBLE SENSOR
+        ================================== -->
         <article class="project-card">
 
+          <img
+            class="project-image"
+            src="images/egotac-fingertip-sensor.jpg"
+            alt="EgoTac flexible piezoresistive fingertip tactile sensor"
+          />
+
+          <div class="project-card-content">
+
+            <p class="project-type">
+              Research · Piezoresistive Sensing
+            </p>
+
+            <h3>
+              EgoTac Piezoresistive Fingertip Sensor
+            </h3>
+
+            <p>
+              A compact flexible tactile sensor under development for robotic
+              fingertips, using piezoresistive sensing elements to measure
+              contact and force within a small form factor.
+            </p>
+
+            <span class="project-link coming-soon">
+              Project document coming soon
+            </span>
+
+          </div>
+        </article>
+
+
+
+        <!-- =================================
+             PROJECT 4
+             CAPACITIVE FORCE SENSOR
+        ================================== -->
+        <article class="project-card">
 
           <img
             class="project-image"
@@ -174,9 +287,14 @@
           />
 
           <div class="project-card-content">
-            <p class="project-type">Research · Capacitive Sensing</p>
 
-            <h3>Capacitive Normal and Shear Force Sensing System</h3>
+            <p class="project-type">
+              Research · Capacitive Sensing
+            </p>
+
+            <h3>
+              Capacitive Normal and Shear Force Sensing System
+            </h3>
 
             <p>
               A capacitive tactile sensing platform under development for
@@ -188,120 +306,310 @@
             <span class="project-link coming-soon">
               Project document coming soon
             </span>
+
           </div>
         </article>
+
+
+
+        <!-- =================================
+             PROJECT 5
+             TACTILE FEEDBACK LED ARRAY
+        ================================== -->
+        <article class="project-card">
+
+          <img
+            class="project-image"
+            src="images/tactile-feedback-array.jpg"
+            alt="LED array visualizing tactile sensor measurements"
+          />
+
+          <div class="project-card-content">
+
+            <p class="project-type">
+              Embedded Systems · Visualization
+            </p>
+
+            <h3>
+              Tactile Feedback Visualization Array
+            </h3>
+
+            <p>
+              An LED-based visualization system under development that
+              converts tactile sensor measurements into a spatial visual
+              display, allowing a camera to observe both the physical
+              interaction and the sensor response simultaneously.
+            </p>
+
+            <span class="project-link coming-soon">
+              Project document coming soon
+            </span>
+
+          </div>
+        </article>
+
+
+
+        <!-- =================================
+             PROJECT 6
+             ESP32 NETWORK
+        ================================== -->
+        <article class="project-card">
+
+          <img
+            class="project-image"
+            src="images/esp32-sensor-network.jpg"
+            alt="Wireless ESP32 sensor and actuation network"
+          />
+
+          <div class="project-card-content">
+
+            <p class="project-type">
+              Embedded Systems · Networking
+            </p>
+
+            <h3>
+              Wireless ESP32 Sensor and Actuation Network
+            </h3>
+
+            <p>
+              A distributed embedded network that collects sensor data and
+              controls physical outputs using ESP32 nodes, wireless
+              communication, analog sensing, thermocouple interfaces, relay
+              drivers, and onboard power conversion.
+            </p>
+
+            <span class="project-link coming-soon">
+              Project document coming soon
+            </span>
+
+          </div>
+        </article>
+
+
       </div>
     </section>
 
-    <!-- WORK -->
-    <section id="work" class="content-section work-section">
+
+
+    <!-- =========================
+         WORK EXPERIENCE
+    ========================== -->
+    <section
+      id="work"
+      class="content-section work-section"
+    >
+
       <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Work</h2>
+
+        <p class="eyebrow">
+          Experience
+        </p>
+
+        <h2>
+          Work
+        </h2>
+
       </div>
-    
+
+
       <div class="work-list">
+
+
+        <!-- SWINERGY -->
         <article class="work-item">
+
           <div class="work-main">
+
             <img
               class="work-logo"
               src="images/swinergy-logo.png"
               alt="Swinergy logo"
             />
-    
+
             <div>
-              <h3>Engineering Intern</h3>
-              <p class="organization">Swinergy</p>
+
+              <h3>
+                Engineering Intern
+              </h3>
+
+              <p class="organization">
+                Swinergy
+              </p>
+
             </div>
           </div>
-    
-          <p class="date">06/2026 – 08/2026</p>
+
+          <p class="date">
+            06/2026 – 08/2026
+          </p>
+
         </article>
-    
+
+
+
+        <!-- MARS LAB -->
         <article class="work-item">
+
           <div class="work-main">
+
             <img
               class="work-logo"
               src="images/mars-lab-logo.png"
               alt="Purdue MARS Lab logo"
             />
-    
+
             <div>
-              <h3>Undergraduate Researcher</h3>
-              <p class="organization">Purdue MARS Lab</p>
+
+              <h3>
+                Undergraduate Researcher
+              </h3>
+
+              <p class="organization">
+                Purdue MARS Lab
+              </p>
+
             </div>
           </div>
-    
-          <p class="date">01/2026 – Present</p>
+
+          <p class="date">
+            01/2026 – Present
+          </p>
+
         </article>
-    
+
+
+
+        <!-- PURDUE TA -->
         <article class="work-item">
+
           <div class="work-main">
+
             <img
               class="work-logo"
               src="images/purdue-logo.png"
               alt="Purdue University logo"
             />
-    
+
             <div>
-              <h3>Undergraduate Teaching Assistant</h3>
-              <p class="organization">Purdue University</p>
+
+              <h3>
+                Undergraduate Teaching Assistant
+              </h3>
+
+              <p class="organization">
+                Purdue University
+              </p>
+
             </div>
           </div>
-    
-          <p class="date">01/2026 – 05/2026</p>
+
+          <p class="date">
+            01/2026 – 05/2026
+          </p>
+
         </article>
+
+
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="content-section skills-section">
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section
+      id="skills"
+      class="content-section skills-section"
+    >
+
       <div class="section-heading">
-        <p class="eyebrow">Technical toolkit</p>
-        <h2>Skills</h2>
+
+        <p class="eyebrow">
+          Technical toolkit
+        </p>
+
+        <h2>
+          Skills
+        </h2>
+
       </div>
 
+
       <div class="skills-grid">
+
+
+        <!-- HARDWARE -->
         <article class="skill-group">
-          <h3>Hardware</h3>
+
+          <h3>
+            Hardware
+          </h3>
 
           <div class="skill-tags">
+
             <span>Circuit Design</span>
             <span>PCB Design</span>
             <span>Embedded Systems</span>
             <span>Sensor Interfaces</span>
             <span>Data Acquisition</span>
             <span>FPGA Design</span>
+
           </div>
+
         </article>
 
+
+
+        <!-- PROGRAMMING -->
         <article class="skill-group">
-          <h3>Programming</h3>
+
+          <h3>
+            Programming
+          </h3>
 
           <div class="skill-tags">
+
             <span>Python</span>
             <span>C</span>
             <span>MATLAB</span>
             <span>SystemVerilog</span>
             <span>HTML</span>
             <span>CSS</span>
+
           </div>
+
         </article>
 
+
+
+        <!-- TOOLS -->
         <article class="skill-group">
-          <h3>Tools &amp; Platforms</h3>
+
+          <h3>
+            Tools &amp; Platforms
+          </h3>
 
           <div class="skill-tags">
+
             <span>KiCad</span>
             <span>Altium</span>
             <span>GitHub</span>
             <span>Arduino</span>
             <span>ESP32</span>
             <span>PSoC</span>
+
           </div>
+
         </article>
+
+
       </div>
     </section>
+
+
   </main>
+
 </body>
 </html>
