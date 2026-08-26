@@ -139,8 +139,7 @@ a {
   transform: scaleX(0);
   transform-origin: center;
 
-  transition:
-    transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 
@@ -413,36 +412,78 @@ main {
 
 
 /* =========================================================
-   PROJECT IMAGES
+   NORMAL PROJECT IMAGES
 ========================================================= */
 
-.project-image,
-.project-image-placeholder,
-.photodiode-image-wrapper {
+.project-image {
+  display: block;
+
   width: 100%;
 
   aspect-ratio: 16 / 10;
-}
-
-
-/*
-  Default project images fill the entire image area.
-  This works well for normal photographs and screenshots.
-*/
-.project-image {
-  width: 100%;
-  height: 100%;
 
   object-fit: cover;
   object-position: center;
 }
 
 
+
+/* =========================================================
+   PHOTODIODE PCB IMAGE
+
+   This is intentionally completely separate from
+   .project-image.
+
+   The PCB screenshot is extremely wide. The wrapper keeps
+   the same 16:10 height as the other cards while "contain"
+   makes the entire PCB visible without cropping it.
+========================================================= */
+
+.photodiode-image-wrapper {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+
+  background-color: #001326;
+}
+
+
+.photodiode-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: none;
+
+  object-fit: contain;
+  object-position: center center;
+}
+
+
+
+/* =========================================================
+   OPTIONAL PROJECT IMAGE PLACEHOLDER
+========================================================= */
+
 .project-image-placeholder {
   display: flex;
 
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 10;
 
   background:
     linear-gradient(
@@ -459,38 +500,6 @@ main {
   letter-spacing: 0.08em;
 
   text-transform: uppercase;
-}
-
-
-
-/* =========================================================
-   PHOTODIODE PCB IMAGE
-
-   The source image is much wider than the other project
-   images. Using object-fit: contain keeps the entire PCB
-   visible rather than cropping off the left and right sides.
-========================================================= */
-
-.photodiode-image-wrapper {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  overflow: hidden;
-
-  background-color: #001326;
-}
-
-
-.photodiode-image {
-  width: 100%;
-  height: 100%;
-
-  padding: 8px;
-
-  object-fit: contain;
-  object-position: center;
 }
 
 
