@@ -96,6 +96,7 @@ a {
 
   font-size: 1.4rem;
   font-weight: 700;
+
   letter-spacing: 0.01em;
 
   text-decoration: none;
@@ -179,6 +180,7 @@ main {
 
   font-size: 0.82rem;
   font-weight: 800;
+
   letter-spacing: 0.13em;
 
   text-transform: uppercase;
@@ -346,10 +348,6 @@ main {
 }
 
 
-/*
-  Creates the full-width light-green background
-  while keeping project content constrained to page width.
-*/
 .projects-section::before {
   position: absolute;
 
@@ -368,15 +366,6 @@ main {
   transform: translateX(-50%);
 }
 
-
-
-/* THREE COLUMNS ON DESKTOP
-
-   Six projects create:
-
-   PROJECT 1   PROJECT 2   PROJECT 3
-   PROJECT 4   PROJECT 5   PROJECT 6
-*/
 
 .project-grid {
   display: grid;
@@ -428,15 +417,24 @@ main {
 ========================================================= */
 
 .project-image,
-.project-image-placeholder {
+.project-image-placeholder,
+.photodiode-image-wrapper {
   width: 100%;
 
   aspect-ratio: 16 / 10;
 }
 
 
+/*
+  Default project images fill the entire image area.
+  This works well for normal photographs and screenshots.
+*/
 .project-image {
+  width: 100%;
+  height: 100%;
+
   object-fit: cover;
+  object-position: center;
 }
 
 
@@ -461,6 +459,38 @@ main {
   letter-spacing: 0.08em;
 
   text-transform: uppercase;
+}
+
+
+
+/* =========================================================
+   PHOTODIODE PCB IMAGE
+
+   The source image is much wider than the other project
+   images. Using object-fit: contain keeps the entire PCB
+   visible rather than cropping off the left and right sides.
+========================================================= */
+
+.photodiode-image-wrapper {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-color: #001326;
+}
+
+
+.photodiode-image {
+  width: 100%;
+  height: 100%;
+
+  padding: 8px;
+
+  object-fit: contain;
+  object-position: center;
 }
 
 
