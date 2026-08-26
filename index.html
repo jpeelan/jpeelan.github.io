@@ -12,14 +12,15 @@
 
   <title>John Pelan | Electrical Engineering Portfolio</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Version number forces browser to reload updated CSS -->
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER / NAVIGATION
-  ========================== -->
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
   <header class="site-header">
 
     <nav class="navbar" aria-label="Main navigation">
@@ -42,9 +43,9 @@
 
   <main>
 
-    <!-- =========================
+    <!-- =====================================================
          INTRO
-    ========================== -->
+    ====================================================== -->
     <section id="intro" class="intro-section">
 
       <div class="intro-content">
@@ -71,7 +72,6 @@
         </p>
 
 
-        <!-- CONTACT BUTTONS -->
         <div
           class="contact-links"
           aria-label="Contact and professional links"
@@ -113,7 +113,6 @@
       </div>
 
 
-      <!-- PROFILE IMAGE -->
       <div class="profile-photo-wrapper">
 
         <img
@@ -128,9 +127,9 @@
 
 
 
-    <!-- =========================
+    <!-- =====================================================
          PROJECTS AND RESEARCH
-    ========================== -->
+    ====================================================== -->
     <section
       id="projects"
       class="content-section projects-section"
@@ -152,10 +151,10 @@
       <div class="project-grid">
 
 
-        <!-- =================================
+        <!-- =================================================
              PROJECT 1
-             LEAP HAND TACTILE SENSING
-        ================================== -->
+             PIEZORESISTIVE LEAP HAND SENSOR
+        ================================================== -->
         <article class="project-card">
 
           <img
@@ -191,16 +190,21 @@
 
 
 
-        <!-- =================================
+        <!-- =================================================
              PROJECT 2
              PHOTODIODE TACTILE SENSOR
-        ================================== -->
+
+             IMPORTANT:
+             This image does NOT use "project-image".
+             It has its own sizing behavior because the PCB
+             screenshot is much wider than the other images.
+        ================================================== -->
         <article class="project-card">
 
           <div class="photodiode-image-wrapper">
 
             <img
-              class="project-image photodiode-image"
+              class="photodiode-image"
               src="images/photodiode-tactile-sensor.jpg"
               alt="Photodiode-based tactile sensing array"
             />
@@ -233,10 +237,10 @@
 
 
 
-        <!-- =================================
+        <!-- =================================================
              PROJECT 3
-             EGOTAC FLEXIBLE SENSOR
-        ================================== -->
+             EGOTAC
+        ================================================== -->
         <article class="project-card">
 
           <img
@@ -271,10 +275,10 @@
 
 
 
-        <!-- =================================
+        <!-- =================================================
              PROJECT 4
-             CAPACITIVE FORCE SENSOR
-        ================================== -->
+             CAPACITIVE TACTILE SENSOR
+        ================================================== -->
         <article class="project-card">
 
           <img
@@ -310,10 +314,10 @@
 
 
 
-        <!-- =================================
+        <!-- =================================================
              PROJECT 5
-             TACTILE FEEDBACK LED ARRAY
-        ================================== -->
+             TACTILE FEEDBACK VISUALIZATION ARRAY
+        ================================================== -->
         <article class="project-card">
 
           <img
@@ -349,10 +353,10 @@
 
 
 
-        <!-- =================================
+        <!-- =================================================
              PROJECT 6
              ESP32 NETWORK
-        ================================== -->
+        ================================================== -->
         <article class="project-card">
 
           <img
@@ -393,9 +397,9 @@
 
 
 
-    <!-- =========================
-         WORK EXPERIENCE
-    ========================== -->
+    <!-- =====================================================
+         WORK
+    ====================================================== -->
     <section
       id="work"
       class="content-section work-section"
@@ -521,9 +525,9 @@
 
 
 
-    <!-- =========================
+    <!-- =====================================================
          SKILLS
-    ========================== -->
+    ====================================================== -->
     <section
       id="skills"
       class="content-section skills-section"
@@ -613,7 +617,6 @@
       </div>
 
     </section>
-
 
   </main>
 
